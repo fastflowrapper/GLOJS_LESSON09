@@ -1,32 +1,28 @@
 'use strict';
 
-let calculateButton = document.getElementById('start'),
+let start = document.getElementById('start'),
 
 button1 = document.querySelectorAll('button')[0],
 button2 = document.querySelectorAll('button')[1],
 
-depositCheckbox = document.querySelector('#deposit-check'),
+depositCheck = document.querySelector('#deposit-check'),
 
-maybeIncomeInput1 = document.querySelectorAll('.additional_income-item')[0],
+addIncomeItem1 = document.querySelectorAll('.additional_income-item')[0],
+addIncomeItem2 = document.querySelectorAll('.additional_income-item')[1],
 
-maybeIncomeInput2 = document.querySelectorAll('.additional_income-item')[1],
-
-allOfValues = document.querySelectorAll('[class*="-value"]'),
+budgetMonthValue = document.querySelector('.budget_month-value'),
+budgetDayValue = document.querySelector('.budget_day-value'),
+expensesMonthValue = document.querySelector('.expenses_month-value'),
+additionalIncomeValue = document.querySelector('.additional_income-value'),
+additionalExpensesValue = document.querySelector('.additional_expenses-value'),
+incomePeriodValue = document.querySelector('.income_period-value'),
+targetMonthValue = document.querySelector('.target_month-value'),
 
 salaryAmount = document.querySelector('.salary-amount'),
-addIncomeName = document.querySelector('[class = "income-title"]'),
-addIncomeAmount = document.querySelector('.income-amount'),
-expensesName = document.querySelector('[class = "expenses-title"]'),
+incomeTitle = document.querySelector('[class = "income-title"]'),
+incomeAmount = document.querySelector('.income-amount'),
+expensesTitle = document.querySelector('[class = "expenses-title"]'),
 expensesAmount = document.querySelector('.expenses-amount'),
 addExpences = document.querySelector('.additional_expenses-item'),
 targetAmount = document.querySelector('.target-amount'),
-period = document.querySelector('[type = "range"]');
-
-console.log(salaryAmount);
-console.log(addIncomeName);
-console.log(addIncomeAmount);
-console.log(expensesName);
-console.log(expensesAmount);
-console.log(addExpences);
-console.log(targetAmount);
-console.log(period);
+range = document.querySelector('[type = "range"]');
